@@ -8,7 +8,7 @@ const postsRoutes = require('./routes/posts');
 const app = express();
 
 //connect to mongoose, get the string and password from the mongodb cluster connect, and change the db name here(node-angular) if needed, to create new db on the go
-mongoose.connect('mongodb+srv://Zee:fTtM2pxavagKGKs2@cluster0.u3ju9.mongodb.net/node-angular?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://***/node-angular?retryWrites=true&w=majority')
 .then(() => {
   console.log('connected to database');
 }).catch(() => {
